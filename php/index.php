@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 $host = "localhost";
 $dbname = "Ciber";
@@ -12,7 +11,6 @@ if (!$conn) {
     die("Error de conexión: " . mysqli_connect_error());
 }
 
-// Obtener datos del formulario
 $email = $_POST['email'];
 $password = $_POST['password'];
 
